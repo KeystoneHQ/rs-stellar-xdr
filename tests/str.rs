@@ -1,9 +1,10 @@
 #![cfg(feature = "curr")]
-#![cfg(feature = "std")]
 
-use stellar_xdr::curr as stellar_xdr;
+extern crate std;
 
-use stellar_xdr::{
+use stellar_xdr::curr as stellar_xdr1;
+
+use stellar_xdr1::{
     AccountId, Error, Hash, MuxedAccount, MuxedAccountMed25519, NodeId, PublicKey, ScAddress,
     SignerKey, SignerKeyEd25519SignedPayload, Uint256,
 };

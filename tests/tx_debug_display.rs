@@ -4,11 +4,11 @@
 ))]
 
 #[cfg(feature = "curr")]
-use stellar_xdr::curr as stellar_xdr;
+use stellar_xdr::curr as stellar_xdr1;
 #[cfg(feature = "next")]
-use stellar_xdr::next as stellar_xdr;
+use stellar_xdr::next as stellar_xdr1;
 
-use stellar_xdr::{BytesM, Error, Hash, StringM, VecM};
+use stellar_xdr1::{BytesM, Error, Hash, StringM, VecM};
 
 #[test]
 fn test_debug() {

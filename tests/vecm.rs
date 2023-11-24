@@ -2,14 +2,13 @@
     any(feature = "curr", feature = "next"),
     not(all(feature = "curr", feature = "next"))
 ))]
-#![cfg(feature = "std")]
 
 #[cfg(feature = "curr")]
-use stellar_xdr::curr as stellar_xdr;
+use stellar_xdr::curr as stellar_xdr1;
 #[cfg(feature = "next")]
-use stellar_xdr::next as stellar_xdr;
+use stellar_xdr::next as stellar_xdr1;
 
-use stellar_xdr::{BytesM, Limits, ReadXdr, ScVal};
+use stellar_xdr1::{BytesM, Limits, ReadXdr, ScVal};
 
 #[test]
 fn valid_len() {
